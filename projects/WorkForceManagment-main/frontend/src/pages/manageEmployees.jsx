@@ -20,6 +20,14 @@ const ManageEmployees = () => {
   if (error) {
     return <Text>An error occurred: {error}</Text>;
   }
+  if (data.length <= 0) {
+    return (
+      <div className="flex flex-col justify-center items-center">
+        <Text className="text-xl sm:text-2xl font-bold">No employees found</Text>
+      </div>
+    );
+  }
+
   if (data.length > 0) {
     return (
       <div className="p-4 m-5 bg-white shadow-sm rounded-xl sm:p-6 lg:p-8">
