@@ -1,0 +1,39 @@
+{
+  "name": "rf",
+  "version": "1.0.0",
+  "description": "RF BackEnd",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest ./test/attendance.test.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "mqtt",
+    "rf",
+    "mongo",
+    "employee API"
+  ],
+  "author": "Eslam Yasser",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "compression": "^1.7.5",
+    "cors": "2.8.5",
+    "dotenv": "16.4.1",
+    "express": "4.18.2",
+    "moment": "2.30.1",
+    "mongodb": "6.3.0",
+    "mongoose": "8.1.1",
+    "mqtt": "5.3.5",
+    "multer": "^1.4.5-lts.1",
+    "node-cache": "5.1.2",
+    "nodemon": "3.0.1",
+    "socket.io": "4.7.4",
+    "uuid": "9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
